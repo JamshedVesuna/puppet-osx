@@ -7,6 +7,6 @@ class osx::dock::disable_dashboard {
     key    => 'mcx-disabled',
     domain => 'com.apple.dashboard',
     value  => true,
-    notify => Exec['killall Dock'];
+    #notify => Exec['killall Dock'];  # Uncomment only on inital run
   }
 }

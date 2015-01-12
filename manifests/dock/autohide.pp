@@ -7,6 +7,6 @@ class osx::dock::autohide {
     key    => 'autohide',
     domain => 'com.apple.dock',
     value  => true,
-    notify => Exec['killall Dock'];
+    # notify => Exec['killall Dock'];  # Uncomment only on initial run
   }
 }

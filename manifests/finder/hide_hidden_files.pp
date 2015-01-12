@@ -7,6 +7,6 @@ class osx::finder::hide_hidden_files {
     key    => 'AppleShowAllFiles',
     domain => 'com.apple.finder',
     value  => false,
-    notify => Exec['killall Finder'];
+    #notify => Exec['killall Finder'];  # Uncomment only on initial run
   }
 }
